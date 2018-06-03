@@ -1,0 +1,20 @@
+extends layout
+
+block content
+ body(style='background-color:#feff65;')
+ .main.container(style='padding:0 0 2% 8%; border:solid; width:50%; margin-top: 8%; background-color:white;')
+  .row
+   .col-sm-10
+    h1.display-4.m-b-3(align='center') Login
+     h1(align='center', style='background-color:powderblue; border:solid;')= title
+     form.form-horizontal
+      div.form-group
+       label(for='user') Usuario:
+       input#name.form-control(type='text', placeholder='Usuario' name='user')
+      div.form-group
+       label(for='pw') Password:
+       input#pw.form-control(type='password', placeholder='Contraseña' name='password')
+      button.btn.btn-primary(type='submit') Iniciar Sesion
+
+
+
